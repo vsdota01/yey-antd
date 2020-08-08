@@ -1,0 +1,230 @@
+@import "../../styles/theme-file.less";
+#about {
+  text-align: left;
+  .abmain {
+    margin-top: 30px;
+    position: relative;
+    margin-bottom: 50px;
+    @media only screen and (min-width: 880px) {
+      .abmain1t {
+        position: absolute;
+        top: 120px;
+        left: 40px;
+        width: 170px;
+        z-index: 3;
+      }
+      .abmain3 {
+        width: 550px;
+        height: 550px;
+        background: #79c0f6;
+        overflow: hidden;
+        border-radius: 100%;
+        position: absolute;
+        z-index: 1;
+        left: 160px;
+        margin-top: -15px;
+        opacity: 0.5;
+      }
+      .abmain2 {
+        width: 550px;
+        height: 550px;
+        background: @primary-color;
+        margin: 0 auto;
+        overflow: hidden;
+        border-radius: 100%;
+        position: relative;
+        z-index: 99;
+        color: white;
+        .p {
+          width: 420px;
+          margin: 0 auto;
+          margin-top: 100px;
+          h5 {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #fff;
+          }
+          p {
+            margin-top: 10px;
+            text-indent: 2em;
+          }
+        }
+        .mor {
+          background: #aad063;
+          width: 100px;
+          height: 30px;
+          color: white;
+          cursor: pointer;
+          border-radius: 30px;
+          line-height: 30px;
+          text-align: center;
+          font-size: 12px;
+          margin: 50px auto;
+        }
+      }
+      .abmain3t {
+        position: absolute;
+        top: 30px;
+        right: 40px;
+        width: 190px;
+        border-radius: 0px 0px 0px 170px;
+        z-index: 3;
+      }
+    }
+    @media only screen and (max-width: 880px) {
+      .abmain1t {
+        display: none;
+      }
+      .abmain3 {
+        display: none;
+      }
+      .abmain2 {
+        width: 100%;
+        padding: 0 12px;
+        color: #000000;
+        .p {
+          margin-top: 40px;
+          h5 {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #fff;
+          }
+          p {
+            margin-top: 10px;
+            text-indent: 2em;
+          }
+        }
+        .mor {
+          text-align: right;
+          color: @primary-color;
+          cursor: pointer;
+          font-size: 12px;
+        }
+      }
+      .abmain3t {
+        display: none;
+      }
+    }
+  }
+  @media only screen and (min-width: 880px) {
+    .bymb-card {
+      margin: 50px 0;
+      color: #fff;
+      .bymb-card-item {
+        width: 48%;
+        height: 200px;
+        border-radius: 20px;
+        overflow: hidden;
+        .icon {
+          height: 122px;
+          width: 36%;
+          border-right: 1px solid darkgray;
+          img {
+            width: 60px;
+            margin-bottom: 20px;
+          }
+          p {
+            font-size: 16px;
+            font-weight: 500;
+          }
+        }
+        .text {
+          padding: 0 40px 0 20px;
+          line-height: 1.6;
+        }
+      }
+      .xwlist-item {
+        width: 25%;
+        font-size: 14px;
+        height: 302px;
+        &:hover {
+          img {
+            transition: linear 1s;
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 880px) {
+    .bymb-card {
+      margin: 20px 0;
+      color: #fff;
+      .bymb-card-item {
+        width: 100%;
+        height: 140px;
+        overflow: hidden;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        .icon {
+          height: 80px;
+          width: 36%;
+          border-right: 1px solid darkgray;
+          img {
+            width: 40px;
+            margin-bottom: 10px;
+          }
+          p {
+            font-size: 14px;
+            font-weight: 500;
+          }
+        }
+        .text {
+          padding: 0 20px 0 10px;
+          line-height: 1.6;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 5;
+          overflow: hidden;
+        }
+      }
+      .xwlist-item {
+        width: 41vw;
+        font-size: 12px;
+        height: 200px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .bymb-card {
+    .bymb-card-item {
+      &.left {
+        background: @primary-color;
+      }
+      &.right {
+        background: #aad063;
+      }
+    }
+    .xwlist-item {
+      overflow: hidden;
+      position: relative;
+      color: #fff;
+      div {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  h4 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .bymb {
+    line-height: 180%;
+    text-indent: 2em;
+    margin-top: 20px;
+  }
+  .hx {
+    width: 200px;
+    height: 1px;
+    background: darkgray;
+    margin-top: 20px;
+  }
+}
