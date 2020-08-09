@@ -9,6 +9,7 @@
         v-model="page"
         :total="total"
         show-less-items
+        hideOnSinglePage
         style="text-align:center"
       />
     </Container>

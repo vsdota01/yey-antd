@@ -153,6 +153,9 @@ export default {
           background: @primary-color;
           color: #fff;
           justify-content: center;
+          a {
+            color: #fff;
+          }
         }
       }
       .mzzx {
@@ -185,6 +188,9 @@ export default {
                 background: @primary-color;
                 color: #fff;
                 justify-content: center;
+                a {
+                  color: #fff;
+                }
               }
             }
           }
@@ -202,6 +208,9 @@ export default {
               background: @primary-color;
               color: #fff;
               justify-content: center;
+              a {
+                color: #fff;
+              }
             }
           }
         }
