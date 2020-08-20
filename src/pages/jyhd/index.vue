@@ -8,7 +8,6 @@
         v-model="page"
         :total="total"
         show-less-items
-        hideOnSinglePage
         @change="change"
         style="text-align:center"></a-pagination>
     </Container>
@@ -23,7 +22,7 @@ export default {
   data() {
     return {
       page: 1,
-      limit: 9,
+      limit: 6,
       total: 0,
       list: [],
     };
@@ -46,6 +45,9 @@ export default {
       this.list = resp.list;
       this.total = resp.total;
     },
+  },
+  created() {
+    this.$root.menuIndex = 6;
   },
 };
 </script>

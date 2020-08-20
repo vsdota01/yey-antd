@@ -33,6 +33,12 @@ export default {
   computed: {
     location() {
       try {
+        if (
+          this.$local[this.$root.lang].menu[this.$root.menuIndex].name ===
+          "首页"
+        ) {
+          return this.$route.meta.title;
+        }
         return this.$local[this.$root.lang].menu[this.$root.menuIndex].name;
       } catch (error) {
         return "";
@@ -40,6 +46,17 @@ export default {
     },
     biaoqian() {
       try {
+        console.log(
+          this.$local[this.$root.lang].menu[this.$root.menuIndex].biaoqian
+        );
+        if (
+          this.$local[this.$root.lang].menu[this.$root.menuIndex].biaoqian
+            .length == 1 &&
+          this.$local[this.$root.lang].menu[this.$root.menuIndex].biaoqian[0]
+            .name === "首页"
+        ) {
+          return [{ name: this.$route.meta.title, path: this.$route.path }];
+        }
         return this.$local[this.$root.lang].menu[this.$root.menuIndex].biaoqian;
       } catch (error) {
         return [];

@@ -75,6 +75,12 @@ export default {
       this.visible = false;
     },
   },
+  watch:{
+    "$root.menuIndex"(newVal){
+      this.active = newVal;
+      localStorage.setItem("menuIndex",newVal);
+    }
+  }
 };
 </script>
 <style lang="less" scoped>

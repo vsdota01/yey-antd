@@ -43,6 +43,9 @@ export default {
   components: {
     Container,
   },
+  created() {
+    this.$root.menuIndex = 10;
+  },
 };
 </script>
 <style lang="less" scoped>

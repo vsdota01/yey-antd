@@ -47,7 +47,7 @@
           </div>
           <div class="flex flex-js-end flex-ai-end showmore">
             <div class="more1 flex flex-center">
-              <router-link to="/jsfc">{{
+              <router-link to="/jsfcList">{{
                 $local[$root.lang].more
               }}</router-link>
             </div>
@@ -98,7 +98,7 @@
           </div>
           <div class="flex flex-center">
             <div class="more1">
-              <router-link to="/jsfc">{{
+              <router-link to="/jsfcList">{{
                 $local[$root.lang].more
               }}</router-link>
             </div>

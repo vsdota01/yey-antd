@@ -104,5 +104,8 @@ export default {
   components: {
     Container,
   },
+  created(){
+    this.$root.menuIndex = 1
+  }
 };
 </script>

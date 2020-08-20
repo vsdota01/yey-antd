@@ -53,5 +53,8 @@ export default {
     // this.bannerList = await getHome();
     // this.bannerList = await getHome();
   },
+  created() {
+    this.$root.menuIndex = 0;
+  },
 };
 </script>

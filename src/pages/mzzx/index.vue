@@ -8,7 +8,6 @@
         v-model="page"
         :total="total"
         show-less-items
-        hideOnSinglePage
         @change="change"
         style="text-align:center"
       />
@@ -46,6 +45,9 @@ export default {
       this.list = resp.list;
       this.total = resp.total;
     },
+  },
+  created() {
+    this.$root.menuIndex = 0;
   },
 };
 </script>

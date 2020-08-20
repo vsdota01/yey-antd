@@ -22,7 +22,6 @@
           v-model="page"
           :total="total"
           show-less-items
-          hideOnSinglePage
           style="text-align:center"
           @change="change"
         />
@@ -65,6 +64,9 @@ export default {
         query: { id, type: "getRecipe" },
       });
     },
+  },
+  created() {
+    this.$root.menuIndex = 0;
   },
 };
 </script>

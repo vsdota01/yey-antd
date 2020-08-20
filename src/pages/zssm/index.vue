@@ -22,6 +22,9 @@ export default {
   async mounted() {
     this.article = await getRecruit();
   },
+  created() {
+    this.$root.menuIndex = 9;
+  },
 };
 </script>
 <style lang="less" scoped>
